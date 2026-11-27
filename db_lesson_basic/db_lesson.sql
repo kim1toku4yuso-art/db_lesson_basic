@@ -46,3 +46,4 @@ SELECT * FROM people WHERE department_id= 1 ORDER BY age ASC;
 SELECT AVG(age) AS average_age FROM people WHERE department_id = 2 AND gender = 2;
 SELECT * FROM people INNER JOIN departments ON people.department_id = departments.department_id INNER JOIN reports ON people.person_id = reports.person_id;
 SELECT p.person_id, p.name, r.person_id FROM people p RIGHT OUTER JOIN reports r USING (person_id);
+
